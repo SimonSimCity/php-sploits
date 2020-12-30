@@ -106,6 +106,8 @@ LOCK TABLES `users` WRITE;
 INSERT INTO `users` VALUES (1,'jared','jared','Jared','Mooring','jared@test.com'),(2,'allan','allan','Allan','Shone','allan@test.com');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
+ALTER TABLE users ADD COLUMN profile_url VARCHAR(255);
+
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
